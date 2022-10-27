@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+	    tailwind.config = {
+	      theme: {
+	        extend: {
+	          colors: {
+	            "card-shadow": 'rgba(0,0,0,.125)',
+	            "title": "#343F52",
+	            "subtitle": "#60697B",
+	          }
+	        }
+	      }
+	    }
+	  </script>
+	  <style type="text/tailwindcss">
+	    @layer utilities {
+	      .btn{
+	        @apply bg-[#747ED1] text-white py-[15px] px-[30px] text-[17px] font-bold rounded-[25px];
+	      }
+	    }
+	  </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex flex-col justify-center items-center pt-[100px] pb-[160px]">
+		<h1 class="text-title text-center mb-[20px] text-[42.86px]">Ujian Masuk Perusahaan<br>Teknologi Nasional</h1>
+		<h2 class="text-[24px] px-[25px] mb-[35px] text-subtitle">Pendaftaran Ujian Masuk Perusahaan Teknologi Nasional</h2>
+		<a href="#" class="mb-[70px] btn">Daftar Sekarang</a>
+		<img src="img/i12.png" alt="Hero Image" width="609.98px" />
+	</div>
+	<div class="flex px-[20px] justify-center">
+		<img src="img/i2.png" alt="deskripsi image" width="525.83px" class="px-[20px]" />
+		<div class="px-[20px] mt-[50px]">
+			<h1 class="text-title text-[42.86px] mb-[25px]">Apa itu UMPTN ?</h1>
+			<p class="text-subtitle text-[22px]">Kegiatan seleksi yang ditujukan untuk menyaring talenta digital yang siap di serap oleh Perusahaan Teknologi Nasional.</p>
+		</div>
+	</div>
+	<div class="pt-[80px] py-[40px]">
+		<div>
+			<h1 class="text-title text-[42.86px] mb-[25px] text-center">Program</h1>
+		</div>
+		<div class="flex justify-center mt-[40px]">
+			<div class="w-[448px] flex flex-col p-[40px] items-center rounded-[0.4rem] border-solid border-[1px] border-card-shadow">
+				<img src="img/farcapital.jpg" alt="Far Capital" class="mb-[15px] h-[96px]" />
+				<h1 class="text-[20px] text-title mb-[10px]">Ujian masuk Far Capital</h1>
+				<p class="text-[17px] mb-[20px] text-center text-subtitle leading-[1.7]">Rekrutmen Software Developer untuk FAR Capital Malaysia dengan stack yang diujikan PHP dan NodeJS.</p>
+				<a href="#" class="btn">Daftar Sekarang</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
